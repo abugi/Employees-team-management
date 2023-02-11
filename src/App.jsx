@@ -42,7 +42,7 @@ const App = () => {
   return (
     <>
       <Navigation />
-      <main className='max-w-2xl mx-auto mt-24'>
+      <main className='max-w-2xl mx-auto mt-24 px-6'>
         <Header selectedTeam={selectedTeam} teamMemberCount={employees.filter(members => members.teamName == selectedTeam).length } />
         <Routes>
           <Route path="/" element={<Employees 

@@ -6,7 +6,7 @@ const Employees = ({employees, selectedTeam, handleTeamSelectionChange, handleEm
     return (
         <main>
           <TeamsOption handleTeamSelectionChange={handleTeamSelectionChange} selectedTeam={selectedTeam} teams={teams} />
-          <div className='grid grid-cols-3 gap-6'>
+          <div className='grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-6'>
             { employees.map(employee => (
                 <TeamMemberCard key={employee.id} employee = {employee} handleEmployeeTeamSelection = {handleEmployeeTeamSelection} selectedTeam = {selectedTeam} />
             )) }
